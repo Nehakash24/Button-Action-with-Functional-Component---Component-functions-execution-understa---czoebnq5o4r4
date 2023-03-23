@@ -1,19 +1,19 @@
 import React, {Component, useState} from "react";
 import "./../styles/App.css";
 
-function display(){
-  <div id="dis">
-Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy
-    </div>
-}
 function App() {
+  
+  function SayHello(){
+     return (<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>)
+  }
+  
   return (
     <div id="main">
-    <button onClick={display}>
-    </button>
+      // Do not alter the main div
+    <button id="click" onClick={SayHello}>Click</button>
     </div>
   );
 }
 
-export default App;
 
+export default App;
